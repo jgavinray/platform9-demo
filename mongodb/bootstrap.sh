@@ -6,7 +6,7 @@ mongo_create() {
 
 mongo_data_init() {
 	if [ -f data.csv ]; then
-		mongoimport -d 2016 -c funds --type csv --file data.csv --headerline
+		mongoimport -d CO2 -c readings --type csv --file data.csv --headerline
 	else;
 		echo "no data.csv"; exit 1
 	fi

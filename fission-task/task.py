@@ -13,6 +13,6 @@ def recordRead(day):
 
 def main():
 	response = []
-	for d in range(1,238):
+	for d in range(1,180):
 		response.append(recordRead(d))
 	return json.dumps(response)

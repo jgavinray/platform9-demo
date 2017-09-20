@@ -63,7 +63,7 @@ This is small Ruby application that is entirely static, and only makes a single 
       {
         type: "line",
 
-        dataPoints: <%= HTTParty.get("http://router.fission.svc.cluster.local:31314/readings").to_s %>
+        dataPoints: <%= HTTParty.get("http://router.fission.svc.cluster.local/readings").to_s %>
       }
       ]
     });

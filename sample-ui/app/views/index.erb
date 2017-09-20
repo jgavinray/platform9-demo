@@ -12,7 +12,7 @@
       {
         type: "line",
 
-        dataPoints: <%= HTTParty.get("http://fission.sfo2.gourmet.yoga:31314/readings").to_s %>
+        dataPoints: <%= HTTParty.get("http://router.fission.svc.cluster.local/readings").to_s %>
       }
       ]
     });
